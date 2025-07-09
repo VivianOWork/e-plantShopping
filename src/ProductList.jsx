@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './ProductList.css'
 import CartItem from './CartItem';
-import addItem from './CartSlice'
+import { addItem } from './CartSlice'; 
+
 function ProductList({ onHomeClick }) {
     const [showCart, setShowCart] = useState(false);
    
@@ -18,7 +19,7 @@ function ProductList({ onHomeClick }) {
         }));
       };
 
-      
+
     const plantsArray = [
         {
             category: "Air Purifying Plants",
